@@ -1,0 +1,504 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QXwVnMqpqazX",
+        "outputId": "dbaa9eac-4ac6-4e78-b117-3b36bba90f78"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ],
+      "source": [
+        "print (7+3)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Black Pink\" # 문자열 블랙핑크를 name 이라는 변수에 할당\n",
+        "print(f\"My favorit kpop band is {name}. \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h1D5SeoTsryG",
+        "outputId": "c947cede-2a56-48bd-fec0-5c8bc17cdb05"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My favorit kpop band is Black Pink. \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#input으로 받는것은 문자열\n",
+        "a = int(input (\"정수를 입력하세요: \"))\n",
+        "b =  int(input(\"또 다른 정수를 입력하세요: \"))\n",
+        "c = a + b\n",
+        "print(f\"입력한 두 수의 합은 {c} 입니다.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RhBER2djuNIu",
+        "outputId": "5fb9e1aa-49d0-4c83-8df4-e6918f7eb835"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "정수를 입력하세요: 3\n",
+            "또 다른 정수를 입력하세요: 6\n",
+            "입력한 두 수의 합은 9 입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#문자열 변수 정의 숫자로 시작하면 안됨\n",
+        "abc = \"this is not a variable\"\n",
+        "print(abc)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3oAc7JxszHjc",
+        "outputId": "2ce57196-35e7-468a-9ce2-5ecfe6c370a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "this is not a variable\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "myquote = \"Seize the day you only live once this too shall pass away\" #myquote라는 문자열 변수에값을 할당\n",
+        "print(f\"My quote is '{myquote}'.\") #문자열 표시는 큰 따옴표 또는 작은 따옴표 이용"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XJ7MITCnxaXW",
+        "outputId": "cbc2520d-2a28-4039-db81-4682eb6dee64"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My quote is 'Seize the day you only live once this too shall pass away'.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "first_name =\"Brad\"\n",
+        "last_name = \"Pitt\"\n",
+        "full_name = (f\"{first_name}{last_name}\")\n",
+        "print(full_name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RsqP-xvP2hO2",
+        "outputId": "4290386e-c164-42cf-da36-7dc914f63ce9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "BradPitt\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "myfruit = \"    banana      \"\n",
+        "print(myfruit)\n",
+        "myfruit = myfruit.rstrip() #문자열의 오른쪽 공백 문자를 제거\n",
+        "print(f\"My favorit fruit is {myfruit}.\")\n",
+        "myfruit = myfruit.lstrip() #문자열의 왼쪽 공백 문자를 제거\n",
+        "print(f\"My favorit fruit is {myfruit}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uD-cTspt79eJ",
+        "outputId": "2e298a00-8c07-4480-f0d3-11161665f61a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "    banana      \n",
+            "My favorit fruit is     banana.\n",
+            "My favorit fruit is banana.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"park. moon so\"\n",
+        "print(f\"Hi, {name.title()}. Do you want to learn Python? \") #title 메서드 글자의 첫글자 대문자로 만듬"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pf_A4mGH9XLw",
+        "outputId": "ab756afa-30e2-4959-e837-cdfcba699a8e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hi, Park. Moon So. Do you want to learn Python? \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(10 / 3) #정수 나누기 정수 결과를 실수 값으로 변환\n",
+        "print(10//3) #floor(바닥값) 계산, 즉 소수점 이하를 버리고 정수로 만듬\n",
+        "print(7//2)\n",
+        "print(0.2 + 7)\n",
+        "print(0.2 + 0.1) #에러가 일어날 수 있음\n",
+        "print(3 * 0.1)\n",
+        "print(4/2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "61bBs9kl_BRZ",
+        "outputId": "48dad636-96a5-4cb6-b85f-e20fbdd3bd30"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.3333333333333335\n",
+            "3\n",
+            "3\n",
+            "7.2\n",
+            "0.30000000000000004\n",
+            "0.30000000000000004\n",
+            "2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "universal_age = 14_000_000_000\n",
+        "print(universal_age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZkcToiYrAOKi",
+        "outputId": "25eb3658-86e4-435e-dd50-5fa8cbbe953b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "14000000000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x,y,z = 10,3,14\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3qQbJYr2AcWh",
+        "outputId": "13f6219b-2e20-47f8-8f6b-8279d299b88f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import this"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bYuRd9McA6Va",
+        "outputId": "fedef5f9-badf-41f4-df6f-0a2d5813496b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The Zen of Python, by Tim Peters\n",
+            "\n",
+            "Beautiful is better than ugly.\n",
+            "Explicit is better than implicit.\n",
+            "Simple is better than complex.\n",
+            "Complex is better than complicated.\n",
+            "Flat is better than nested.\n",
+            "Sparse is better than dense.\n",
+            "Readability counts.\n",
+            "Special cases aren't special enough to break the rules.\n",
+            "Although practicality beats purity.\n",
+            "Errors should never pass silently.\n",
+            "Unless explicitly silenced.\n",
+            "In the face of ambiguity, refuse the temptation to guess.\n",
+            "There should be one-- and preferably only one --obvious way to do it.\n",
+            "Although that way may not be obvious at first unless you're Dutch.\n",
+            "Now is better than never.\n",
+            "Although never is often better than *right* now.\n",
+            "If the implementation is hard to explain, it's a bad idea.\n",
+            "If the implementation is easy to explain, it may be a good idea.\n",
+            "Namespaces are one honking great idea -- let's do more of those!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_favorites = [7, 'green', 'watermellon']\n",
+        "print(f\"My favorit number is {my_favorites[0]}\")\n",
+        "print(f\"My favorit color is {my_favorites[1]}\")\n",
+        "print(f\"My favorit fruit is {my_favorites[2]}\")\n",
+        "my_favorites[2] = 'banana'\n",
+        "print(my_favorites)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LbNzZQ1IBfvx",
+        "outputId": "66d89141-d39d-4a90-d234-25d5033dbaac"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My favorit number is 7\n",
+            "My favorit color is green\n",
+            "My favorit fruit is watermellon\n",
+            "[7, 'green', 'banana']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bikes = [] #빈 리스크 생성\n",
+        "print(bikes)\n",
+        "bikes.append('honda') #리스크 맨 뒤에 아이템 추가\n",
+        "print(bikes)\n",
+        "bikes.append('yamaha')\n",
+        "print(bikes)\n",
+        "bikes.insert(1,'suzuki') #특정 위치에 아이템 추가\n",
+        "print(bikes)\n",
+        "bikes.pop(0) #pop 메서드 특정 위치의 항목 제거\n",
+        "print(bikes)\n",
+        "del bikes #리스트 전체를 삭제"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kER3KUzxDuYr",
+        "outputId": "08bd074d-a853-4e0b-ebe7-d77174afcf9e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[]\n",
+            "['honda']\n",
+            "['honda', 'yamaha']\n",
+            "['honda', 'suzuki', 'yamaha']\n",
+            "['suzuki', 'yamaha']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cars = ['bmw','audi','toyota','subaru']\n",
+        "cars.sort() #리스트 메서드 sort()를 이용해 정렬\n",
+        "print(cars)\n",
+        "print(len(cars)) #리스트내의 항목 개수 출력\n",
+        "print"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n2stcqRPHXgp",
+        "outputId": "311fd456-515a-4694-bb27-eb1f0fdefa90"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['audi', 'bmw', 'subaru', 'toyota']\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mylist = [[1,2,3], [1,2,3,4]]\n",
+        "len(mylist)\n",
+        "print(mylist[1].pop())\n",
+        "print(mylist)\n",
+        "mylist[0].pop()\n",
+        "print(mylist)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1kDoMW1eKTgi",
+        "outputId": "af683e57-e3e6-4101-ab4c-cfc3f7ae6cf6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n",
+            "[[1, 2, 3], [1, 2, 3]]\n",
+            "[[1, 2], [1, 2, 3]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [1,2,3,4,5,6,7,8,9]\n",
+        "output = [[],[],[]]\n",
+        "\n",
+        "for number in numbers:\n",
+        "  output[0].append(1)\n",
+        "\n",
+        "print(output)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qZluqulCLkrT",
+        "outputId": "89095043-0ef7-419d-d8d3-582fbedfe463"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1, 1, 1, 1, 1, 1, 1, 1, 1], [], []]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
